@@ -18,6 +18,7 @@ int main() {
 	
 	while(t--){
 	    cin>>n>>k;
+		//declaring the array
 	    long long int a[n+1],b[n+1];
 	    a[n]=0;
 	    b[n]=0;
