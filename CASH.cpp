@@ -17,7 +17,8 @@ int main() {
 	cin>>t;
 	
 	while(t--){
-	    cin>>n>>k;
+	    cin>>n;
+	     cin>>k;
 	    long long int a[n+1],b[n+1];
 	    a[n]=0;
 	    b[n]=0;
