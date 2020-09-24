@@ -23,14 +23,17 @@ int main() {
 	    b[n]=0;
 	    //for loop
 	    for(int i=0;i<n;i++){
-	        cin>>a[i];}
+	        cin>>a[i];
+	    }
 	        for(int i=0;i<n;i++){
 	        b[i]=a[i]%k;
 	        if(b[i]==0){
 	            a[i]=0;
-	        }else{
+	        }
+			else{
 	             a[i]=k-b[i];
-	        }}
+	        }
+		}
 	    
 	    g=b[0];
 	    r=accumulate(a+1, a+n, r);
