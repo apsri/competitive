@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-long long int calculatedRe(long long int g,long long int r){
+#define ll long long
+
+ll int calculatedRe(long long int g,long long int r){
     long long int re=g-r;
     if(re<0){
         return LLONG_MAX;}
@@ -9,16 +11,17 @@ long long int calculatedRe(long long int g,long long int r){
     
     }
 }
+
 int main() {
 	// your code goes here
 	int t;
 	int n;
-	long long int k,r=0,g=0,re=0,mi=0;
+	ll int k,r=0,g=0,re=0,mi=0;
 	cin>>t;
 	
 	while(t--){
 	    cin>>n>>k;
-	    long long int a[n+1],b[n+1];
+	    ll int a[n+1],b[n+1];
 	    a[n]=0;
 	    b[n]=0;
 	    //for loop
@@ -34,12 +37,12 @@ int main() {
 	    
 	    g=b[0];
 	    r=accumulate(a+1, a+n, r);
-	    re=calre(g,r);
+	    re=calculatedRe(g,r);
 	    mi=re;
 	    for(int i=1;i<n;i++){
 	        r-=a[i];
 	        g+=b[i];
-	        re=calre(g,r);
+	        re=calculatedRe(g,r);
 	        if(mi>re){
 	            mi=re;
 	        }
