@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-long long int calre(long long int g,long long int r){
+long long int calculatedRe(long long int g,long long int r){
     long long int re=g-r;
     if(re<0){
         return LLONG_MAX;}
