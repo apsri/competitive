@@ -1,7 +1,4 @@
 #include<bits/stdc++.h>
-
-#define max(a,b) ((a) > (b) ? (a) : (b))
-
 using namespace std;
 
 string add(string lhs, string rhs) {
@@ -100,6 +97,6 @@ string multiply(string lhs, string rhs) {
 int main() {
     string s1, s2;
     cin >> s1 >> s2;
-    cout << multiply(s1,s2) << endl;
+    cout << multiply(s1,s2) << "\n";
     return 0;
 }
