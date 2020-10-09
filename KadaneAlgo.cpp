@@ -22,7 +22,8 @@ int main() {
 	    {
 	        cin>>a[i];
 	    }
-	    cout<<maxsum(a,n)<<"\n";
+	    cout<<maxsum(a,n);
+	    cout<<"\n";
 	    
 	}
 	return 0;
