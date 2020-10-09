@@ -1,15 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+#define ll long long 
 int main() {
-	// your code goes here
 	int t,n;
-	long long int s=0;
+	ll s=0;
 	cin>>t;
 	while(t--){
 	    s=0;
 	    cin>>n;
-	    long long int a[n],b[n];
+	    ll a[n],b[n];
 	    for(int i=0;i<n;i++)
 	    {
 	        cin>>a[i];
